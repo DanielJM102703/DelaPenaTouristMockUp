@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f8ff;
+    color: #333;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    background: #008080;
+    padding: 1rem 2rem;
+    color: #fff;
+  }
+  nav h1 {
+    font-size: 1.5rem;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .hero {
+    background: url('images/canuba1.jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-text {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  .hero-text h2 {
+    font-size: 3rem;
+  }
+  .hero-text button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: #00ced1;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  section {
+    padding: 3rem 2rem;
+    max-width: 1100px;
+    margin: auto;
+  }
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .gallery-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .testimonial-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+  }
+  .testimonial-slider div {
+    min-width: 250px;
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #008080;
+    color: white;
+  }
+  
